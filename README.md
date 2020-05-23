@@ -1,7 +1,6 @@
 # Favorite-Dogs
 Add your favorite dog breed to the collection using the Dog CEO API.
 <br>
-This is a website created using Vanilla Javascript and the Dog CEO API.
 <br><br>
 Code: HTML, CSS, Vanilla Javascript<br>
 API: Dog CEO API<br>

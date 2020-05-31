@@ -12,7 +12,7 @@ async function addDog(breedType) {
 		resultJson = await result.json();
 		data = resultJson.message;
 
-		//omit sub-breed and only display main breed
+		//omit sub-breed and only display main breed using string manipulation
 		function indexSymbol() {
 			//if there is a sub breed, end of the index is - before it starts
 			if (data.slice(0, data.indexOf("/", 30)).includes("-")) {
@@ -61,7 +61,7 @@ async function addDog(breedType) {
 	deleteBtn.className = "delete-btn";
 
 	p.textContent = breedName.toUpperCase();
-	deleteBtn.textContent = '⊗';
+	deleteBtn.textContent = "⊗";
 
 	collection.appendChild(div);
 	div.appendChild(p);

@@ -14,10 +14,12 @@
 	font-family: "Nunito", sans-serif;
 	transition: 0.5s;
 	overflow: scroll;
-
 }
 
-.add-random:focus, .delete-btn:focus { outline: none; }
+.add-random:focus,
+.delete-btn:focus {
+	outline: none;
+}
 
 .add-random:hover {
 	background-color: white;
@@ -57,7 +59,7 @@ p {
 	margin-right: 30px;
 	font-size: 25px;
 	font-family: "Nunito", sans-serif;
-	    padding-left: 55px;
+	padding-left: 55px;
 }
 
 header {
@@ -86,25 +88,42 @@ html {
 }
 
 .delete-btn {
-    position: relative;
-    top: -13.7vw;
-    right: -13px;
-    font-size: 45px;
-    cursor: pointer;
-    background-color: transparent;
-    padding: 0;
-    border: none;
-    background: none;
-    transition: .3s;
-
+	position: relative;
+	top: -13.7vw;
+	right: -13px;
+	font-size: 45px;
+	cursor: pointer;
+	background-color: transparent;
+	padding: 0;
+	border: none;
+	background: none;
+	transition: 0.3s;
 }
 
 .delete-btn:hover {
 	color: #8f8b8b;
-	transition: .3s;
+	transition: 0.3s;
 }
 
+/*Mobile Query */
+@media only screen and (max-width: 644px) {
+	img {
+		width: 35vw !important;
+		height: 35vw !important;
+		object-fit: cover !important;
+	}
 
+	.delete-btn {
+		top: -32.7vw !important;
+		right: -21px !important;
+		font-size: 85px !important;
+	}
 
+	p {
+		padding-left: 75px !important;
+	}
 
-
+	.collection {
+		margin-right: 58px !important;
+	}
+}

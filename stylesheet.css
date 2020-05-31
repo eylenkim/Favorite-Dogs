@@ -13,7 +13,6 @@
 	top: 16px;
 	font-family: "Nunito", sans-serif;
 	transition: 0.5s;
-	overflow: scroll;
 }
 
 .add-random:focus,
